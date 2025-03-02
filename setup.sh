@@ -61,6 +61,7 @@ flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.usebottles.bottles
 flatpak install flathub org.raspberrypi.rpi-imager
 flatpak install flathub com.dec05eba.gpu_screen_recorder
+flatpak install flathub app.zen_browser.zen
 
 # Enable fstrim - SSD optimization tool
 sudo systemctl enable fstrim.timer
