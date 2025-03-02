@@ -48,12 +48,12 @@ sudo apt update
 sudo apt install dbeaver-ce
 
 # Copy your custom config files
-cp -r ../dotfiles/.config/micro/* ~/.config/micro
-cp -r ../dotfiles/.config/fastfetch/ ~/.config/fastfetch
-cp ../dotfiles/.bashrc ~
-cp ../dotfiles/.gitconfig ~
-cat ~/dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
-cp ~/dotfiles/.vscodium/settings.json ~/.config/Code/User/
+cp -r ./dotfiles/.config/micro/* ~/.config/micro
+cp -r ./dotfiles/.config/fastfetch/ ~/.config/fastfetch
+cp ./dotfiles/.bashrc ~
+cp ./dotfiles/.gitconfig ~
+cat ./dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
+cp ./dotfiles/.vscodium/settings.json ~/.config/Code/User/
 
 
 # Flatpak installations
