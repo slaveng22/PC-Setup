@@ -8,4 +8,4 @@
 
 
 ## Linux
-- Rubs setup.sh
+- Run setup.sh
