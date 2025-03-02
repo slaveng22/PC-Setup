@@ -10,6 +10,7 @@ hashicorp.terraform
 hediet.vscode-drawio
 jborean.ansibug
 jeanp413.open-remote-wsl
+mads-hartmann.bash-ide-vscode
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.debugpy
@@ -19,4 +20,5 @@ pkief.markdown-checkbox
 pkief.material-icon-theme
 redhat.vscode-yaml
 sqlfluff.vscode-sqlfluff
+tekumara.typos-vscode
 vscodevim.vim

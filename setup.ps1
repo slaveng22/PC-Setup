@@ -73,4 +73,4 @@ Copy-Item -Path .\dotfiles\.config\fastfetch\config.jsonc -Destination $env:USER
 Copy-Item -Path .\dotfiles\.gitconfig -Destination $env:USERPROFILE -Force
 Copy-Item -Path .\images\_Backgrounds -Destination $env:USERPROFILE\Pictures -Recurse -Force
 Get-Content .\dotfiles\.vscodium\extensions.txt | ForEach-Object { codium --install-extension $_ }
-Copy-Item -Path .\dotfiles\.vscodium\settings.json -Destination $env:APPDATA\Code\User\ -Force
+Copy-Item -Path .\dotfiles\.vscodium\settings.json -Destination $env:APPDATA\VSCodium\User\ -Force

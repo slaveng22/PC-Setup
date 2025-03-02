@@ -53,7 +53,7 @@ cp -r ./dotfiles/.config/fastfetch/ ~/.config/fastfetch
 cp ./dotfiles/.bashrc ~
 cp ./dotfiles/.gitconfig ~
 cat ./dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
-cp ./dotfiles/.vscodium/settings.json ~/.config/Code/User/
+cp ./dotfiles/.vscodium/settings.json ~/.config/VSCodium/User
 
 
 # Flatpak installations
