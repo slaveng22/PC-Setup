@@ -71,8 +71,6 @@ Copy-Item -Path .\dotfiles\settings.json -Destination $env:USERPROFILE\AppData\L
 Copy-Item -Path .\dotfiles\.config\micro\* -Destination $env:USERPROFILE\.config\micro -Recurse -Force
 Copy-Item -Path .\dotfiles\.config\fastfetch\config.jsonc -Destination $env:USERPROFILE\.config\fastfetch -Force
 Copy-Item -Path .\dotfiles\.gitconfig -Destination $env:USERPROFILE -Force
-Copy-Item -Path .\images\* -Destination $env:USERPROFILE\Pictures -Recurse -Force
-git clone git@github.com:slaveng22/WorkMadeEasy_Module.git
-Copy-Item -Path .\WorkMadeEasy_Module\WorkMadeEasy -Destination $env:USERPROFILE\Documents\PowerShell\Modules\WorkMadeEasy -Recurse -Force
-Unblock-File -Path $env:USERPROFILE\Documents\PowerShell\Modules\WorkMadeEasy\WorkMadeEasy.psd1
-Unblock-File -Path $env:USERPROFILE\Documents\PowerShell\Modules\WorkMadeEasy\WorkMadeEasy.psm1
+Copy-Item -Path .\images\_Backgrounds -Destination $env:USERPROFILE\Pictures -Recurse -Force
+Get-Content .\dotfiles\.vscodium\extensions.txt | ForEach-Object { codium --install-extension $_ }
+Copy-Item -Path .\dotfiles\.vscodium\settings.json -Destination $env:APPDATA\Code\User\ -Force

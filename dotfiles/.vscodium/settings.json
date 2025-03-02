@@ -1,0 +1,46 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "vs-kubernetes": {
+        "vscode-kubernetes.kubectl-path-windows": "C:\\Users\\gug.BIM\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
+        "vscode-kubernetes.helm-path-windows": "C:\\Users\\gug.BIM\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+        "vscode-kubernetes.minikube-path-windows": "C:\\Users\\gug.BIM\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
+
+        "vscode-kubernetes.kubectl-path-linux": "/usr/local/bin/kubectl",
+        "vscode-kubernetes.helm-path-linux": "/usr/local/bin/helm",
+        "vscode-kubernetes.minikube-path-linux": "/usr/local/bin/minikube"
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "git.openRepositoryInParentFolders": "never",
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "none",
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.integratedConsole.startInBackground": true,
+    "redhat.telemetry.enabled": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "workbench.colorTheme": "Timu Spacegrey Theme",
+
+    "terminal.integrated.profiles.windows": {
+        "PowerShell 7": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+        },
+        "Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe"
+        }
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/bin/bash"
+        },
+        "zsh": {
+            "path": "/bin/zsh"
+        },
+        "fish": {
+            "path": "/usr/bin/fish"
+        }
+    },
+
+    "terminal.integrated.defaultProfile.windows": "PowerShell 7",
+    "terminal.integrated.defaultProfile.linux": "bash"
+}
