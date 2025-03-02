@@ -29,7 +29,7 @@ $softwareList = @(
   "JesseDuffield.lazygit",
   "voidtools.Everything",
   "VSCodium.VSCodium",
-  "Mozilla.Firefox",
+  "Zen-Team.Zen-Browser",
   "Microsoft.PowerToys",
   "OpenWhisperSystems.Signal",
   "7zip.7zip",
