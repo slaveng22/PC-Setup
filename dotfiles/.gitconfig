@@ -1,0 +1,46 @@
+[user]
+    name = slaveng22
+    email = 117160808+slaveng22@users.noreply.github.com
+    signingkey = ~/.ssh/id_rsa_github
+
+[core]
+    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe -i ~/.ssh/id_rsa_github
+
+[push]
+    default = current
+
+[pull]
+    rebase = true
+
+[tag]
+    forceSignAnnotated = true
+
+[init]
+    defaultBranch = main
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
