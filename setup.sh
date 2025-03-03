@@ -13,7 +13,12 @@ sudo apt install \
   timeshift \
   vlc \
   kdeconnect \
+  flameshot \
+  gimp \
   thunderbird
+
+# For now needs to be installed manually. It will work on Debian 13!
+sudo apt install fastfetch -y
 
 # Install additional software
 # Signal
@@ -26,9 +31,6 @@ sudo apt update && sudo apt install signal-desktop
 wget -c https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 sudo dpkg -i viber.deb
 rm viber.deb
-
-# Fastfetch
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 
 # TLP Battery optimization
 sudo apt install tlp
@@ -57,6 +59,7 @@ flatpak install flathub org.raspberrypi.rpi-imager
 flatpak install flathub com.dec05eba.gpu_screen_recorder
 flatpak install flathub app.zen_browser.zen
 flatpak install flathub com.jgraph.drawio.desktop
+flatpak install flathub net.mkiol.SpeechNote
 
 # Enable fstrim - SSD optimization tool
 sudo systemctl enable fstrim.timer
