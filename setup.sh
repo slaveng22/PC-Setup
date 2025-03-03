@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # Basics install
 sudo apt update
@@ -35,11 +35,11 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 # TLP Battery optimization
 sudo apt install tlp
 
-# VSCodium
-curl -fSsL https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscodium.gpg >/dev/null
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/vscodium.gpg] https://download.vscodium.com/debs vscodium main" | sudo tee /etc/apt/sources.list.d/vscodium.list
-sudo apt update
-sudo apt install codium
+# VSCodium - Trying ZED
+# curl -fSsL https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscodium.gpg >/dev/null
+# echo "deb [arch=amd64 signed-by=/usr/share/keyrings/vscodium.gpg] https://download.vscodium.com/debs vscodium main" | sudo tee /etc/apt/sources.list.d/vscodium.list#Z
+# sudo apt update
+# sudo apt install codium
 
 # DBeaver
 sudo wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
@@ -52,8 +52,9 @@ cp -r ./dotfiles/.config/micro/* ~/.config/micro
 cp -r ./dotfiles/.config/fastfetch/ ~/.config/fastfetch
 cp ./dotfiles/.bashrc ~
 cp ./dotfiles/.gitconfig ~
-cat ./dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
-cp ./dotfiles/.vscodium/settings.json ~/.config/VSCodium/User
+# Trying ZED
+# cat ./dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
+# cp ./dotfiles/.vscodium/settings.json ~/.config/VSCodium/User
 
 
 # Flatpak installations
