@@ -42,7 +42,7 @@ $softwareList = @(
   "WinSCP.WinSCP",
   "Insecure.Nmap",
   "TheDocumentFoundation.LibreOffice"
-    
+
 )
 
 foreach ($packageId in $softwareList)
@@ -50,10 +50,10 @@ foreach ($packageId in $softwareList)
   $packageId = $packageId.Trim()
 
   Write-Progress -Activity "This might take a while, please be patient. Be ZEN!" -Status "Installing defined software..."
-    
+
   try
   {
-        
+
     winget install -e --id $packageId --source winget --silent --accept-source-agreements --accept-package-agreements
 
     Write-Host "$packageId installed successfully."
@@ -68,7 +68,7 @@ Write-Host "Software installation completed."
 # Use scoop to install Zed code editor, since I'm moving away from VSCodium
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop bucket add versions
-scoop install versions/zed-nightly 
+scoop install versions/zed-nightly
 
 
 # Copy config file
@@ -78,5 +78,8 @@ Copy-Item -Path .\dotfiles\.config\micro\* -Destination $env:USERPROFILE\.config
 Copy-Item -Path .\dotfiles\.config\fastfetch\config.jsonc -Destination $env:USERPROFILE\.config\fastfetch -Force
 Copy-Item -Path .\dotfiles\.gitconfig -Destination $env:USERPROFILE -Force
 Copy-Item -Path .\images\_Backgrounds -Destination $env:USERPROFILE\Pictures -Recurse -Force
-Get-Content .\dotfiles\.vscodium\extensions.txt | ForEach-Object { codium --install-extension $_ }
-Copy-Item -Path .\dotfiles\.vscodium\settings.json -Destination $env:APPDATA\VSCodium\User\ -Force
+Copy-Item -Path .\dotfiles\.config\zed\ -Destination $env:USERPROFILE\AppData\Local -Recurse -Force
+
+# Trying out Zed editor
+# Get-Content .\dotfiles\.vscodium\extensions.txt | ForEach-Object { codium --install-extension $_ }
+# Copy-Item -Path .\dotfiles\.vscodium\settings.json -Destination $env:APPDATA\VSCodium\User\ -Force
