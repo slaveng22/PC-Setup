@@ -65,6 +65,12 @@ foreach ($packageId in $softwareList)
 
 Write-Host "Software installation completed."
 
+# Use scoop to install Zed code editor, since I'm moving away from VSCodium
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop bucket add versions
+scoop install versions/zed-nightly 
+
+
 # Copy config file
 Copy-Item -Path .\dotfiles\Microsoft.PowerShell_profile.ps1 -Destination $env:USERPROFILE\Documents\PowerShell -Force
 Copy-Item -Path .\dotfiles\settings.json -Destination $env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState -Force
