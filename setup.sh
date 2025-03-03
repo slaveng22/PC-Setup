@@ -1,5 +1,3 @@
-
-
 # Basics install
 sudo apt update
 sudo apt upgrade -y
@@ -9,10 +7,10 @@ sudo apt install \
   fastfetch \
   git \
   curl \
+  gnupg \
   wget \
   fzf \
   timeshift \
-  flatpak \
   vlc \
   kdeconnect \
   thunderbird
@@ -35,11 +33,8 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 # TLP Battery optimization
 sudo apt install tlp
 
-# VSCodium - Trying ZED
-# curl -fSsL https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscodium.gpg >/dev/null
-# echo "deb [arch=amd64 signed-by=/usr/share/keyrings/vscodium.gpg] https://download.vscodium.com/debs vscodium main" | sudo tee /etc/apt/sources.list.d/vscodium.list#Z
-# sudo apt update
-# sudo apt install codium
+# Zed code editor
+curl -f https://zed.dev/install.sh | sh
 
 # DBeaver
 sudo wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
@@ -50,11 +45,9 @@ sudo apt install dbeaver-ce
 # Copy your custom config files
 cp -r ./dotfiles/.config/micro/* ~/.config/micro
 cp -r ./dotfiles/.config/fastfetch/ ~/.config/fastfetch
+cp -r ./dotfiles/.config/zed ~/.config/zed
 cp ./dotfiles/.bashrc ~
 cp ./dotfiles/.gitconfig ~
-# Trying ZED
-# cat ./dotfiles/.vscodium/extensions.txt | xargs -n 1 codium --install-extension
-# cp ./dotfiles/.vscodium/settings.json ~/.config/VSCodium/User
 
 
 # Flatpak installations
@@ -63,6 +56,7 @@ flatpak install flathub com.usebottles.bottles
 flatpak install flathub org.raspberrypi.rpi-imager
 flatpak install flathub com.dec05eba.gpu_screen_recorder
 flatpak install flathub app.zen_browser.zen
+flatpak install flathub com.jgraph.drawio.desktop
 
 # Enable fstrim - SSD optimization tool
 sudo systemctl enable fstrim.timer
